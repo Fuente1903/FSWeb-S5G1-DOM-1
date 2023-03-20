@@ -42,4 +42,14 @@ const siteContent = { // BU NESNEYİ DEĞİŞTİRMEYİN
 console.log('Proje açıldı!')
 
 
-/* Kodlar Buradan aşağıya */
+const text = document.querySelector(".container a");
+for (let i = 0; i < text.length; i++) {
+  text[i].textContent = siteContent.nav[`nav-item-${i+1}`];
+  text[i].classList.add("İtalic");
+}
+
+document.querySelector("h1").textContent = siteContent.cta.h1;
+DocumentTimeline.querySelector("button").textContent = siteContent.cta.button;
+
+text.textContent="Servisler";
+
